@@ -76,3 +76,6 @@ test('validated saves preserve notes, partial entries, undo/redo and earned repl
  assert.deepEqual(decode(JSON.stringify({version:2}),puzzles).sessions[p.id],blank(p.size));
  const invalid=decode(JSON.stringify({version:1,sessions:{[p.id]:{now:{values:Array(16).fill(9)}}}}),puzzles);assert.deepEqual(invalid.sessions[p.id],blank(4));
 });
+test('invalid cell indices are rejected for entries and notes',()=>{
+ const s=blank(4);for(const index of [NaN,0.5,-1,16,Infinity]){assert.equal(edit(s,index,2,false),s);assert.equal(edit(s,index,2,true),s);}
+});

@@ -332,96 +332,93 @@
           0,
           1
         ],
-        "op": "+",
-        "target": 4
+        "op": "-",
+        "target": 2
       },
       {
         "cells": [
           2,
-          3,
-          4
+          3
         ],
-        "op": "\u00d7",
-        "target": 40
+        "op": "-",
+        "target": 3
+      },
+      {
+        "cells": [
+          4,
+          8,
+          9
+        ],
+        "op": "straight"
       },
       {
         "cells": [
           5,
           6
         ],
-        "op": "/",
-        "target": 2
+        "op": "straight"
       },
       {
         "cells": [
           7,
           12
         ],
-        "op": "\u00d7",
-        "target": 5
-      },
-      {
-        "cells": [
-          8,
-          9,
-          13
-        ],
-        "op": "\u00d7",
-        "target": 9
+        "op": "-",
+        "target": 1
       },
       {
         "cells": [
           10,
-          11
-        ],
-        "op": "+",
-        "target": 7
-      },
-      {
-        "cells": [
-          14,
-          19
-        ],
-        "op": "/",
-        "target": 2
-      },
-      {
-        "cells": [
-          15,
-          20
-        ],
-        "op": "\u00d7",
-        "target": 4
-      },
-      {
-        "cells": [
-          16,
-          21
+          15
         ],
         "op": "\u00d7",
         "target": 15
       },
       {
         "cells": [
+          11,
+          16
+        ],
+        "op": "-",
+        "target": 2
+      },
+      {
+        "cells": [
+          13,
+          18
+        ],
+        "op": "/",
+        "target": 4
+      },
+      {
+        "cells": [
+          14,
+          19
+        ],
+        "op": "+",
+        "target": 6
+      },
+      {
+        "cells": [
           17,
-          18,
-          23
+          22
+        ],
+        "op": "-",
+        "target": 1
+      },
+      {
+        "cells": [
+          20,
+          21
         ],
         "op": "straight"
       },
       {
         "cells": [
-          22
-        ],
-        "op": "=",
-        "target": 2
-      },
-      {
-        "cells": [
+          23,
           24
         ],
-        "op": "=",
-        "target": 1
+        "op": "straight"
       }
     ]
   },
@@ -438,90 +435,89 @@
           0,
           5
         ],
-        "op": "+",
-        "target": 9
+        "op": "odd"
       },
       {
         "cells": [
           1,
           6
         ],
-        "op": "even"
+        "op": "+",
+        "target": 7
       },
       {
         "cells": [
           2,
           3
         ],
-        "op": "-",
-        "target": 1
+        "op": "<"
       },
       {
         "cells": [
           4,
+          8,
           9
+        ],
+        "op": "+",
+        "target": 7
+      },
+      {
+        "cells": [
+          7,
+          12
         ],
         "op": "<"
       },
       {
         "cells": [
-          7,
-          8,
-          12
-        ],
-        "op": "odd"
-      },
-      {
-        "cells": [
           10,
-          15
+          11
         ],
         "op": "straight"
-      },
-      {
-        "cells": [
-          11,
-          16
-        ],
-        "op": "/",
-        "target": 5
       },
       {
         "cells": [
           13,
-          14,
           18
         ],
-        "op": "straight"
+        "op": "<"
+      },
+      {
+        "cells": [
+          14,
+          19,
+          24
+        ],
+        "op": "\u00d7",
+        "target": 20
+      },
+      {
+        "cells": [
+          15,
+          16
+        ],
+        "op": "odd"
       },
       {
         "cells": [
           17,
           22
         ],
-        "op": "even"
-      },
-      {
-        "cells": [
-          19,
-          24
-        ],
-        "op": "straight"
+        "op": "<"
       },
       {
         "cells": [
           20,
           21
         ],
-        "op": "-",
-        "target": 2
+        "op": "even"
       },
       {
         "cells": [
           23
         ],
         "op": "=",
-        "target": 5
+        "target": 1
       }
     ]
   }

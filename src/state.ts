@@ -5,7 +5,7 @@ export interface Save {version:1;active:number;sessions:Record<string,Session>}
 export const blank=(n:number):Session=>({now:{values:Array(n*n).fill(0),notes:Array.from({length:n*n},()=>[])},past:[],future:[],earned:false});
 function push(s:Session,next:Board):Session {return {...s,now:next,past:[...s.past,s.now].slice(-100),future:[]};}
 export function edit(s:Session,cell:number,value:number,note:boolean):Session {
- if(cell<0||cell>=s.now.values.length||!Number.isInteger(value)||value<0||value>Math.sqrt(s.now.values.length))return s;
+ if(!Number.isInteger(cell)||cell<0||cell>=s.now.values.length||!Number.isInteger(value)||value<0||value>Math.sqrt(s.now.values.length))return s;
  const next=structuredClone(s.now);
  if(note&&value){if(next.values[cell])return s;const ns=next.notes[cell];next.notes[cell]=ns.includes(value)?ns.filter(v=>v!==value):[...ns,value].sort();}
  else {if(next.values[cell]===value && (value!==0||!next.notes[cell].length))return s;next.values[cell]=value;next.notes[cell]=[];}

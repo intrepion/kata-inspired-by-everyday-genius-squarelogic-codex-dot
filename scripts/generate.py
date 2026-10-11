@@ -42,12 +42,17 @@ for index,(id,title,n,difficulty,subtitle,lesson,ops) in enumerate(settings):
             elif op=='-':cage['target']=abs(v[0]-v[1])
             elif op=='/':cage['target']=max(v)//min(v)
             cages.append(cage)
-        if sum(c['op']=='=' for c in cages)>(4 if index==0 else 2):continue
+        if sum(c['op']=='=' for c in cages)>(4 if index==0 else 0 if index==4 else 2):continue
         present={c['op'] for c in cages}
         needed= [{'+'},{'×'},{'-','/'},{'odd','even'},{'straight'},{'<','straight','odd','even'}][index]
         if not needed<=present:continue
         p={'id':id,'title':title,'size':n,'difficulty':difficulty,'subtitle':subtitle,'lesson':lesson,'cages':cages}
-        if len(count(p))==1:break
+        if len(count(p))==1:
+            if index==4:
+                import subprocess
+                probe = subprocess.run(['node','--import','tsx','--input-type=module','-e', "import {readFileSync} from 'node:fs';import {possibilities} from './src/logic.ts';let p=JSON.parse(readFileSync(0,'utf8'));console.log(possibilities(p,Array(p.size*p.size).fill(0)).every(d=>d.length===1));"],input=json.dumps(p),text=True,capture_output=True,check=True)
+                if probe.stdout.strip()=='true': continue
+            break
     else:raise Exception('Unable to author puzzle')
     if index==0:result=[]
     result.append(p); print(id,attempt,len(cages))
