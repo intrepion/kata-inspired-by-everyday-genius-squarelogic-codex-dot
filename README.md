@@ -30,3 +30,7 @@ npm audit --audit-level=moderate
 The TypeScript solver enumerates solutions up to two. The independent Python verifier enumerates row permutations and checks separately implemented cage predicates; neither reads a stored answer. Python also verifies cage coverage and connectivity. Domain tests prove each hinted value by excluding every alternative and searching for a completion. Notes never constrain those proofs. See [research](docs/research.md), [specification](docs/spec.md), [QA evidence](docs/qa.md), [glossary](GLOSSARY.md), and [architectural decision](docs/adr/0001-verifiable-compact-collection.md).
 
 Difficulty labels describe progression in size/rule composition, not a calibrated human solving score. The collection deliberately omits hidden cages and linked boards. Browser testing was hint-assisted and covers every shipped puzzle; it is distinct from independent numerical validation. No claim of physical mobile or screen-reader hardware testing.
+
+## Play online
+
+[Play the hosted game](https://intrepion.github.io/kata-inspired-by-everyday-genius-squarelogic-codex-dot/)
