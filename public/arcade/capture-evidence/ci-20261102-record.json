@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "workflowCommit": "e92298f5a2ebbeb9f7f17a81529655e4ac81ea36",
+  "sourceCommit": "e9bef3d9a9b8267913ca1eca2c0f825ac473417c",
+  "runId": "41407450065",
+  "url": "http://127.0.0.1:4228/",
+  "inputs": {
+    "index.html": "7436b71f6bccab5fd13fada5b2bf37f24118828b88684363b5d79a36369ea975",
+    "assets/index-BLSNR0_W.css": "4c412daf7187774fe296fb97ed9057bd12601e740d4843f7f9f46fb95e5d2e40",
+    "assets/index-C7U1ATcj.js": "175afb74b69d1f403bba7a219fc0a6d09ac5a28c3071f6c0c766dbeeece0a6a8"
+  },
+  "browser": "153.0.8010.12",
+  "viewport": {
+    "width": 1280,
+    "height": 1000
+  },
+  "screenshots": [
+    "lantern-ledger-01.png",
+    "lantern-ledger-02.png"
+  ]
+}

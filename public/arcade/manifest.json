@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "gameId": "kata-inspired-by-everyday-genius-squarelogic-codex-dot",
   "playUrl": "https://intrepion.github.io/kata-inspired-by-everyday-genius-squarelogic-codex-dot/",
   "screenshots": [
@@ -23,6 +23,46 @@
         "sourcePath": "docs/screenshots/first-light-complete.jpg",
         "deployedBuild": null,
         "captureDate": null
+      }
+    },
+    {
+      "path": "arcade/screenshots/ci-20261102-01.jpg",
+      "sha256": "974f0fd5a57091177af3d05c92e086a2ead6068eb0f2d1d4e2ef3b11c032655a",
+      "alt": "Lantern Ledger gameplay, view 1",
+      "provenance": {
+        "kind": "ci_gameplay_capture",
+        "sourcePath": "arcade/capture-evidence/ci-20261102-01.png",
+        "sourceSha256": "c3409e409170b75f09aaab00657a4e9636b6624ccfe8d0e92c8054ace9b1e664",
+        "captureCommit": "e9bef3d9a9b8267913ca1eca2c0f825ac473417c",
+        "workflowRunId": "41407450065",
+        "inputHashes": {
+          "index.html": "7436b71f6bccab5fd13fada5b2bf37f24118828b88684363b5d79a36369ea975",
+          "assets/index-BLSNR0_W.css": "4c412daf7187774fe296fb97ed9057bd12601e740d4843f7f9f46fb95e5d2e40",
+          "assets/index-C7U1ATcj.js": "175afb74b69d1f403bba7a219fc0a6d09ac5a28c3071f6c0c766dbeeece0a6a8"
+        },
+        "publishedFilesVerifiedAt": "2026-11-02T19:01:20Z",
+        "captureRecordPath": "arcade/capture-evidence/ci-20261102-record.json",
+        "captureRecordSha256": "69b9ceaf8941d263439a67853c3a6f21e8e6284d8f904c3822c16e9f410f0de0"
+      }
+    },
+    {
+      "path": "arcade/screenshots/ci-20261102-02.jpg",
+      "sha256": "bd0cfa8aea553b1713621d9b09965ffd0dd57a914a876ff9c3077fdf957ef356",
+      "alt": "Lantern Ledger gameplay, view 2",
+      "provenance": {
+        "kind": "ci_gameplay_capture",
+        "sourcePath": "arcade/capture-evidence/ci-20261102-02.png",
+        "sourceSha256": "7030df033e9200f9762e511a874158c207f05f18001c4ae4ce37df13449094dd",
+        "captureCommit": "e9bef3d9a9b8267913ca1eca2c0f825ac473417c",
+        "workflowRunId": "41407450065",
+        "inputHashes": {
+          "index.html": "7436b71f6bccab5fd13fada5b2bf37f24118828b88684363b5d79a36369ea975",
+          "assets/index-BLSNR0_W.css": "4c412daf7187774fe296fb97ed9057bd12601e740d4843f7f9f46fb95e5d2e40",
+          "assets/index-C7U1ATcj.js": "175afb74b69d1f403bba7a219fc0a6d09ac5a28c3071f6c0c766dbeeece0a6a8"
+        },
+        "publishedFilesVerifiedAt": "2026-11-02T19:01:20Z",
+        "captureRecordPath": "arcade/capture-evidence/ci-20261102-record.json",
+        "captureRecordSha256": "69b9ceaf8941d263439a67853c3a6f21e8e6284d8f904c3822c16e9f410f0de0"
       }
     }
   ]
