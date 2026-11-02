@@ -34,3 +34,7 @@ Difficulty labels describe progression in size/rule composition, not a calibrate
 ## Play online
 
 [Play the hosted game](https://intrepion.github.io/kata-inspired-by-everyday-genius-squarelogic-codex-dot/)
+
+## Arcade metadata
+
+See [docs/arcade-metadata.md](docs/arcade-metadata.md) for the game-owned manifest and screenshot provenance.
